@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 006</title>
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="area">
+        Intereja...
+    </div>
+
+
+
+    <script>
+        let a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            //TUDO AQUI DENTRO SÓ FUNCIONARÁ QUANDO EU CHAMAR O CLICAR
+            a.innerText = 'Clicou'
+            a.style.background = 'blue'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'red'
+        }
+
+        function sair() {
+            a.innerText = 'Intereja...'
+            a.style.background = 'green'
+        }
+    </script>
 </body>
 </html>
