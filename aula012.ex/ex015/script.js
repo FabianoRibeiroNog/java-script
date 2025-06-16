@@ -17,7 +17,6 @@ function verificar () {
             if (idade >= 0 && idade < 10) {
                 //Criança
                 img.setAttribute('src', 'foto-bebehomem230.png') //tentando arrumar aqui
-                console.log('Caminha da imagem para homem criança: ', img.getAttribute('src'))
             } else if (idade < 21) {
                 //Jovem
                 img.setAttribute('src', 'foto-jovemhomem230.png')
